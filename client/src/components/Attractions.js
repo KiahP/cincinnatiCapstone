@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
+import Attract2 from './Images/attractpage2.jpg';
 
 const Attraction = props => (
-  <tr>
-    <td>{props.attraction.name}</td>
-    <td>{props.attraction.description}</td>
-    <td><img src={props.attraction.image} alt=""/></td>
-    <td>{props.attraction.address}</td>
-    <td>{props.attraction.city}</td>
-    <td>{props.attraction.state}</td>
-    <td>{props.attraction.zipcode}</td>
-  </tr>
+
+
+
+   <div className="card mb-3 card-style" id="card-style">
+  <div className="row g-0">
+  <div className="col-md-4">
+<img className="shopattractimg" src={props.attraction.image}  alt=""/>
+</div>
+<div className="col-md-8">
+<div className="card-body card-shopattract-text zooani">
+   <h4 className="card-title titlestyle">{props.attraction.name}</h4>
+   <p className='card-text wonder'>{props.attraction.description}</p>
+   <p>{props.attraction.address} {props.attraction.city}, {props.attraction.state} {props.attraction.zipcode}</p>
+ 
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+
+  
 )
 
 export default class Attractions extends Component {
@@ -39,40 +52,41 @@ export default class Attractions extends Component {
   render() {
     return (
 
-      <div>
+      <div >
 
       
       <header id="header-section-shop">
       <div className="container-fluid attracttophead">
       <div className="header-text">
-      <h2 className="bigger-font text-white">Attractions</h2>
-      <p>Whether it’s luxury designer boutiques, concept shops or outlet malls.</p>
+      <h2 className="bigger-font ">EXPLORE CINCINNATI</h2>
+      <p className="bat">Whether it’s luxury designer boutiques, concept shops or outlet malls. 
+      </p>
       </div>
       </div>
       </header>
 
+      <div className="container-fluid parent pback">
+      <div className="shop-info child ">
+      <h2 className="shoptextstyle text-center">Attractions</h2>
+      <div >
+        <img src={Attract2} alt="woman shopping" id="shop2"/>
+         <p className="aqua">  Be inspired at the National Underground Freedom Center or stroll the world's known zoo. Ride the greatest wooden roller coaster ever built at Kings Island and hold on tight. Cincinnati's attractions often lure attendees before and after the convention... and provide an energizing space to hold a meeting or breakout section.</p>
+       </div> 
       </div>
-        
-//       <div className="text-center">
-//         <h1>Family Fun in Cincy!</h1>
-//         <span >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, nesciunt illum tempore eius quam fugiat odio sapiente totam excepturi, vitae odit exercitationem corporis voluptatibus et modi. Saepe fuga sint quod, iusto deleniti voluptates ad obcaecati quae vel maxime eos, non at quia id aspernatur sequi! Saepe eligendi doloremque mollitia eos.</span>
-//         <table className="table">
-//     <thead className="thead-light">
-//       <tr>
-//         <th>Name</th>
-//         <th>Description</th>
-//         <th>Image</th>
-//         <th>Address</th>
-//         <th>City</th>
-//         <th>State</th>
-//         <th>Zipcode</th>
-//       </tr>
-//     </thead>
-//     <tbody>
-//       { this.Attractions() }
-//     </tbody>
-//   </table>
-// </div>
+      </div>
+      
+      <div className="container-fluid pback">
+
+      </div>
+      
+      <div className="bodyody">
+           { this.Attractions()  }
+                </div>
+
+
+ 
+      </div>
+      
 
 );
 }

@@ -16,14 +16,15 @@ AOS.init();
  
     
         return (
-            <div className="opener">
+            <div className="margin">
         <div className= 'container-fluid'>
             {/* <h3>About the Team</h3> */}
          <header id="about-header">
          <div className="container-fluid" id="about-head-bg">
-             <div>
-                 <h3 className="bigger-font text-white">Meet the Team</h3>
-                 <p className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eius error. Nostrum corrupti, quam modi repellendus voluptatem tempore reiciendis voluptates explicabo dolorem laborum obcaecati tempora reprehenderit labore dolore quis ad, dolores deleniti fugit, sequi atque! Vel magni harum, nam animi molestiae facere iure iusto fuga beatae corporis qui possimus sit!</p>
+             <div id="about-text">
+                 <h2>Meet the Team</h2>
+                 <p> Welcome to our site! We are happy to introduce our 2021 Capstone project; presented through 4 students representing the Kable Academy - Web Development and Design program. 
+                 Scroll down to learn a little more about us! </p>
              </div>
          </div>
 
@@ -40,8 +41,6 @@ AOS.init();
 
     {/* <img className="cincy shadow-lg"  data-aos="fade-down" src={MetroCincy} alt="Metro Cincinnati Aerial Map"/> */}
     
-    
-<br/>
 
             <div className= 'post-container'>
             <div className= 'card-deck-4' id='deck'>
@@ -50,7 +49,7 @@ AOS.init();
                 <div className="image">
             <img src={Drake} alt="Drake" id="drake" />
                 </div>
-            <p> <blockquote  className="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quae eius sunt eveniet. Repudiandae, earum veritatis doloremque unde ad dolor!
+            <p> <blockquote  className="text-center"> The Cincinnati area is a great place to live and I thouroughly enjoyed being able to display all of the skills I learned here at The Kable Academy from my instructor, Austin Morales, and from the rest of my team, all while being able to show off my hometown.
             <br/>
             - Drake</blockquote>
             </p>
@@ -93,7 +92,7 @@ AOS.init();
         </div>
 
 
-       </div>
+    //    </div>
     )
 }
 

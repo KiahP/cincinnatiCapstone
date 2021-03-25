@@ -1,16 +1,13 @@
 import React from 'react'
+import Linktree from './Images/Linktree.png';
+
 
 const footer = () => {
     return (
         
-<footer class="w3-container w3-padding-64 w3-center w3-xlarge fixed-bottom">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">react</a></p>
+<footer class="text-center fixed-bottom">
+
+  <p className="w3-medium text-white">Follow us on GitHub & LinkedIn | <a className="gitLink" href="https://linktr.ee/KableAcademy2021" target="https://linktr.ee/KableAcademy2021"><img className="gitImg" src={Linktree} alt=""/></a></p>
 </footer>
             
         

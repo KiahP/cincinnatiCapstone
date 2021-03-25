@@ -1,18 +1,31 @@
+
 import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
+import Shop2 from './Images/shoppage2.jpg';
 
 
 const Shop = props => (
-  <tr>
-    <td>{props.shop.name}</td>
-    <td>{props.shop.description}</td>
-    <td><img src={props.shop.image} alt=""/></td>
-    <td>{props.shop.address}</td>
-    <td>{props.shop.city}</td>
-    <td>{props.shop.state}</td>
-    <td>{props.shop.zipcode}</td>
-  </tr>
+ 
+
+  <div className="card mb-3" id="card-style">
+  <div className="row g-0">
+  <div className="col-md-4">
+<img className="shopattractimg" src={props.shop.image}  alt=""/>
+</div>
+<div className="col-md-8">
+<div className="card-body card-shopattract-text zooani">
+   <h4 className="card-title titlestyle">{props.shop.name}</h4>
+   <p className='card-text wonder'>{props.shop.description}</p>
+   <p>{props.shop.address} {props.shop.city}, {props.shop.state} {props.shop.zipcode}</p>
+ 
+ 
+ </div>
+ </div>
+ </div>
+ </div>
+
+  
 )
 
 export default class shopLocal extends Component {
@@ -50,36 +63,34 @@ export default class shopLocal extends Component {
       <header id="header-section-shop">
       <div className="container-fluid shoptophead">
       <div className="header-text">
-      <h2 className="bigger-font text-white">SHOPPING</h2>
-      <p>Whether it’s luxury designer boutiques, concept shops or outlet malls.</p>
+      <h2 className="bigger-font ">SHOP 'TIL YOU DROP</h2>
+      <p className="bat">From signature stores to high-quality shopping centers</p>
       </div>
       </div>
       </header>
 
+      <div className="container-fluid parent ">
+      <div className="shop-info child">
+      <h2 className="shoptextstyle text-center">SHOPPING</h2>
+      <div >
+        <img src={Shop2} alt="woman shopping " id="shop2"/>
+       <p className="aqua"> Whether you’re looking for bargain deals on designer clothes or antiques with a history, we’ve got the resources for you to shop ‘til you drop. Head out for the day and explore locally-owned boutiques, outlet stores, shopping malls – and even some fun foodie finds at local markets and shops. You won’t go home empty-handed!</p>
       </div>
-        
-//       <div className="text-center">
+     </div>
+ 
+      </div>
 
+      <div className="container-fluid pback">
 
-//         <h1>Best Shopping in Cincinnati!</h1>
-//         <span >Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ullam, voluptatem neque tempora laudantium voluptas dicta, optio minus inventore voluptatibus rerum! Nisi ab ipsum doloribus vel eum veritatis velit voluptate deleniti nemo, ipsam aperiam consequuntur, minus aliquid ratione accusantium, distinctio omnis provident asperiores impedit earum. Vero enim culpa totam vitae.</span>
-//         <table className="table">
-//     <thead className="thead-light">
-//       <tr>
-//         <th>Name</th>
-//         <th>Description</th>
-//         <th>Image</th>
-//         <th>Address</th>
-//         <th>City</th>
-//         <th>State</th>
-//         <th>Zipcode</th>
-//       </tr>
-//     </thead>
-//     <tbody>
-//       { this.shopLocal() }
-//     </tbody>
-//   </table>
-// </div>
+      </div>
+
+      <div className="bodyody">
+           { this.shopLocal()  }
+                </div>
+     
+
+      </div>
+     
       
 
 

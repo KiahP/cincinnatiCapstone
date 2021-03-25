@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Modal from './Modal'
 
-const contact = () => {
+const Contact = () => {
+
+  
     return (
       
+    
 
         <div>
              <div class="w3-container w3-content w3-padding-64" style={{maxWidth:"800px"}} id="contact">
@@ -29,11 +33,13 @@ const contact = () => {
         </form>
       </div>
     </div>
+    <button type="button" className="btn btn-dark" data-toggle="modal" data-target="#NLModal">Click Here to Subscribe</button>
   </div>
+  
         </div>
 
         
     )
 }
 
-export default contact
+export default Contact
