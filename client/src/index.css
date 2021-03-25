@@ -1,0 +1,271 @@
+/* my nav */
+nav{
+  background-color: #DEE7E7;
+  background-image: url(./components/Images/NavBack.png);
+  background-repeat: no-repeat;
+  background-position-y: -15px;
+  background-position-x: center;
+  font-family: 'Fascinate', cursive;
+  height: auto;
+}
+
+footer{
+  background: #DEE7E7;
+  height: 75px;
+}
+
+.FlyingPig{
+  border-radius: 50%;
+  height: 75px;
+  width: 100px;
+}
+
+a.nav-link{
+  color: black;
+}
+a.nav-link:hover{
+  color: #F4FAFF;
+}
+/* my nav */
+
+#home{
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+}
+section
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+section video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* Below is the CSS for the about pages. Img and card details. */
+/* .card {
+  width: 70%;
+  width: 85%;
+  height: 25%;
+  color: rgb(82, 58, 58);
+  position: static;
+  font-size: 17px; */
+  /* border: black;
+  border-width: medium; */
+
+/* } */
+
+div.about {
+  border: thick;
+  border-color: tomato;
+}
+
+/* #deck{
+  border: black;
+  border-width: thick;
+} */
+
+/* img{
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+  border-Width: 3;
+  border-Color: red
+  
+} */
+#drake {
+  align-self: flex-end;
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+  border-Width: 3;
+}
+#aarika{
+  align-self: flex-end;
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+  border-Width: 3;
+}
+#kiah{
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+  border-Width: 3;
+}
+#ron{
+  width: 150px;
+  height: 150px;
+ border-radius: 50%;
+  border-Width: 3;
+}
+blockquote {
+  font-family: font-family 'Montserrat', sans-serif;
+}
+
+
+div.post-container {
+  align-self: center;
+}
+div.image{
+  display: flexbox;
+  align-self: center;
+  
+}
+
+img.cincy{
+  position: relative;
+  background-size: cover;
+  max-width: 780px;
+  /* width: 500px;
+  height: 500px;
+  min-height: 780px;
+  border-radius: none;
+  border-width: 0px; */
+  overflow: hidden;
+}
+
+#about-head-bg{
+  background-image: url(./components/MetroCincy.jpg);
+  height: 100vh;
+  min-height: 300px;
+ 
+  background: no repeat center center scroll rgba(255,255,255,0.5);;
+  background-size: cover; 
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+}
+
+#about-header{
+  height: 700px;
+width: 100%;
+}
+
+
+
+
+
+
+/* About Page Style End */
+
+
+
+
+
+
+/* shop and attraction pages css */
+
+
+/* importing google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+ #header-section-shop{
+height: 700px;
+width: 100%;
+} 
+
+
+.shoptophead{
+  background-image: url(./components/Images/shoppage.jpg);
+  height: 100vh;
+  min-height: 300px;
+ 
+  background: no repeat center center scroll rgba(255,255,255,0.5);;
+  background-size: cover; 
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+  
+}
+
+.attracttophead{
+  background-image: url(./components/Images/attractpage.jpg);
+  height: 100vh;
+  top: 50px;
+  min-height: 300px;
+  background: no repeat center center scroll rgba(255,255,255,0.5);;
+  background-size: cover; 
+  border-bottom-left-radius: 50% 25%;
+  border-bottom-right-radius: 50% 25%;
+
+}
+
+.header-text{
+  font-family: 'Poppins', sans-serif; 
+  position: absolute;
+  left: 16px;
+ 
+}
+
+.bigger-font{
+  font-size: 50px;
+}
+
+
+/* shop and attraction css end */
+
+
+
+#EatImg{
+  height: 250px;
+  border: .5px transparent #F7F7FF;
+}
+
+.card-text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+.opener{
+  font-family: serif;
+  font-size: 35px;
+  text-align: center;
+  text-shadow: 1px 1px #DEE7E7;
+  color: #000000;
+  background: #F4FAFF;
+}
+
+.Eats{
+  margin-top: 25px;
+  margin-bottom: 150px;
+}
+
+.card-body:hover{
+  /* This is 52px total. 1/2 of that is for top and the other half is for bottom. */
+
+  /* Below we are not using -26px for margin-top because .box has 6px border and 10px margin. */
+  /* That 16px is then divide by 2 since it's for both top and bottom, or 8px per side. */
+  /* Having said that, 26px - 8px is 18px. We need negative value to position it correctly. */
+  margin-top: -18px;
+ -moz-box-shadow:    0 0 50px #000000;
+ -webkit-box-shadow: 0 0 50px #000000;
+ box-shadow:         0 0 50px #000000;    
+}
+
+.card-body{
+  background-color: #DEE7E7;
+}
