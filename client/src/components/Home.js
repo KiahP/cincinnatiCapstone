@@ -41,12 +41,7 @@ const Home = () => {
    </div>
 </div>
 
-      <div className="jumbotron bg-light">
-        <span>The video representing cincinnati's architecture and some of the best attractions in cincinnati, with the ohio river and kentucky just across </span>
-        
-        
 
-      </div>
           </div>
           <div className="col-3">
           <h2>Catch a game!</h2>
