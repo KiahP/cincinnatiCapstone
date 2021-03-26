@@ -57,7 +57,7 @@ export default class shopLocal extends Component {
 
 
 
-      <div>
+      <div className="blackback">
 
       
       <header id="header-section-shop">
@@ -69,7 +69,7 @@ export default class shopLocal extends Component {
       </div>
       </header>
 
-      <div className="container-fluid parent ">
+      <div className="container-fluid parent paback ">
       <div className="shop-info child">
       <h2 className="shoptextstyle text-center">SHOPPING</h2>
       <div >
@@ -80,9 +80,7 @@ export default class shopLocal extends Component {
  
       </div>
 
-      <div className="container-fluid pback">
-
-      </div>
+     
 
       <div className="bodyody">
            { this.shopLocal()  }

@@ -48,7 +48,7 @@ export default class EatLocal extends Component {
     return (
 
         
-<div className="margin">
+<div className="margin blackback">
 <header id="header-section-shop">
       <div className="container-fluid eattophead">
       <div className="header-text">

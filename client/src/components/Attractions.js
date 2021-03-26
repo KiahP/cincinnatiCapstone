@@ -52,7 +52,7 @@ export default class Attractions extends Component {
   render() {
     return (
 
-      <div >
+      <div className="blackback" >
 
       
       <header id="header-section-shop">
@@ -75,9 +75,7 @@ export default class Attractions extends Component {
       </div>
       </div>
       
-      <div className="container-fluid pback">
-
-      </div>
+     
       
       <div className="bodyody">
            { this.Attractions()  }

@@ -47,7 +47,7 @@ export default class CincyHistory extends Component {
   render() {
     return (
         
-<div className="margin">
+<div className="margin blackback">
 <header id="header-section-shop">
       <div className="container-fluid historyTopHead">
       <div className="header-text">
