@@ -23,23 +23,19 @@ export default class Navbar extends Component {
 </li>
 <li>
 <Link to='/contact' className="nav-link">Contact</Link></li>
-<li className="nav-item dropdown">
-<a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-Things To Do</a>
-<div className="dropdown-menu">
-   <Link to='/restaurant' className="dropdown-item">Eat Local</Link>
+
+<Link to='/restaurant' className="nav-link">Eat Local</Link>
       
         
-        <Link to='/shop' className="dropdown-item">Shop Local</Link>
+<Link to='/shop' className="nav-link">Shop Local</Link>
        
         
-        <Link to='/attraction' className="dropdown-item">Attractions</Link>
+<Link to='/attraction' className="nav-link">Attractions</Link>
         
-        <Link to='/history' className="dropdown-item">Cincy History</Link>
+<Link to='/history' className="nav-link">Cincy History</Link>
         
         
-        </div>
-      </li>
+       
 
 </ul>
 </div>
