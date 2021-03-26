@@ -66,8 +66,9 @@ export default class CincyHistory extends Component {
       </div>
       </div>
       </div>
-{ this.cincyHistory() }
-
+      <div className="bodyody">
+        { this.cincyHistory() }
+      </div>
 </div>
       
 

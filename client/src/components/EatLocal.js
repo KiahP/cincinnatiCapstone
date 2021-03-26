@@ -67,8 +67,9 @@ export default class EatLocal extends Component {
       </div>
       </div>
       </div>
-{ this.eatLocal() }
-
+      <div className="bodyody">
+        { this.eatLocal() }
+      </div>
 </div>
       
 
