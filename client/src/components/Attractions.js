@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
 import Attract2 from './Images/attractpage2.jpg';
-
+import {BACKEND_URL} from '../config'
 const Attraction = props => (
 
 
@@ -36,7 +36,7 @@ export default class Attractions extends Component {
     this.state = {cincyAttractions: []};  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/attraction/')
+    axios.get(BACKEND_URL +'attraction/')
      .then(response => {
        this.setState({ cincyAttractions: response.data });
      })

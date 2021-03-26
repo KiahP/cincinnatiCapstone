@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import coney from './Images/coneys.jpg';
+import {BACKEND_URL} from '../config'
 
 const Restaurant = props => (
   <div className="card mb-3 card-style">
@@ -30,7 +31,7 @@ export default class EatLocal extends Component {
     this.state = {restaurants: []};  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/restaurant/')
+    axios.get(BACKEND_URL +'restaurant/')
      .then(response => {
        this.setState({ restaurants: response.data });
      })

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import tour from './Images/historytour.jpg';
+import {BACKEND_URL} from '../config'
 
 const History = props => (
   <div className="card mb-3 card-style">
@@ -30,7 +31,7 @@ export default class CincyHistory extends Component {
     this.state = {histories: []};  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/history/')
+    axios.get(BACKEND_URL +'history/')
      .then(response => {
        this.setState({ histories: response.data });
      })

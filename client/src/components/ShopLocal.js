@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import "../index.css";
 import Shop2 from './Images/shoppage2.jpg';
-
+import {BACKEND_URL} from '../config'
 
 const Shop = props => (
  
@@ -37,7 +37,7 @@ export default class shopLocal extends Component {
     this.state = {shops: []};  
   }
   componentDidMount() {
-    axios.get('http://localhost:5000/shop/')
+    axios.get(BACKEND_URL +'shop/')
      .then(response => {
        this.setState({shops: response.data });
      })
