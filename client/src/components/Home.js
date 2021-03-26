@@ -26,14 +26,14 @@ const Home = () => {
           <h5>Check Out Some Of Our Best Breweries</h5>
           <hr/>
             <div className="container">
-              <img className="logos" src={Rhinegeist} alt=""/>
-              <img className="logos" src={Platform} alt=""/>
-              <img className="logos" src={FiftyWest} alt=""/>
-              <img className="logos" src={Urban} alt=""/>
+              <img className="logos" id="logos" src={Rhinegeist} alt=""/>
+              <img className="logos" id="logos" src={Platform} alt=""/>
+              <img className="logos" id="logos" src={FiftyWest} alt=""/>
+              <img className="logos" id="logos" src={Urban} alt=""/>
             </div>
           </div>
           <div className="col-6">
-            <img src={Bearcats} alt=""/>
+            <img src={Bearcats} alt="" id="bearcat"/>
           </div>
           <div className="col-3">
             <h2>Catch a game!</h2>
@@ -41,10 +41,10 @@ const Home = () => {
             <h5>Hometown Favorites</h5>
             <hr/>
               <div className="container">
-                <img className="logos" src={Reds} alt=""/>
-                <img className="logos" src={Bengals} alt=""/>
-                <img className="logos" src={UC} alt=""/>
-                <img className="logos" src={FC} alt=""/>
+                <img className="logos" id="logos" src={Reds} alt=""/>
+                <img className="logos" id="logos" src={Bengals} alt=""/>
+                <img className="logos" id="logos" src={UC} alt=""/>
+                <img className="logos" id="logos" src={FC} alt=""/>
               </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ AOS.init();
                 <div className="image">
              <img src={Kiah} alt="Kiah" id="kiah"/>
                 </div>
-            <p > <blockquote  className="text-center" > Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis facilis distinctio esse quasi incidunt quisquam explicabo quas maiores quod voluptatibus!
+            <p > <blockquote  className="text-center" > Looking back at my first project, I am so impressed by how much my skills developed over the last 12 weeks. I came a long way since 'Hello World.'
             <br/>
             - Kiah</blockquote></p>
             </div>

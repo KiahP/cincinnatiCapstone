@@ -26,6 +26,15 @@ footer{
   width: 100px;
 }
 
+#dropdown-button{
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 500;
+}
+#dropdown-button:hover{
+  color: #F4FAFF;
+}
+
 a.navbar-brand:hover{
   opacity: 0.8;
 }
@@ -195,6 +204,9 @@ width: 100%;
 
 #contact-body{
   background-image: url(./components/contact.bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -250px;
 }
 
 .modal {
@@ -758,7 +770,7 @@ width:650px;
 /* media queries for screens such as tablets - medium devices */
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:967px){
 
 
   .bigger-font{
@@ -801,6 +813,11 @@ width:650px;
     width: 350px ;
   }
  
- 
+ #bearcat{
+   height: 100px;
+ }
   
+#logos{
+  height: 100px;
+}
 }

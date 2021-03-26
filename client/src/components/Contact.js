@@ -1,18 +1,7 @@
 import React from 'react';
 import Modal from './Modal'
-import {useState} from 'react';
-
 const Contact = () => {
-
-  
-  // const [show, setShow] = useState(false); 
-  //   const handleClose = () => setShow(false);
-  //   const handleShow = () => setShow(true);
-  
     return (
-      
-    
-
         <div id='contact-body'>
              <div class="w3-container w3-content w3-padding-64" style={{maxWidth:"800px"}} id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
@@ -37,22 +26,13 @@ const Contact = () => {
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
         <br/>
-
-
       </div>
-      <div>
-    {/* <button onClick={handleShow } className="btn btn-dark">Subscribe to Our Newsletter!</button> */}
-      {/* <Modal title="Newsletter" onClose={handleClose} show={show}>
-        <p>Modal Body</p>
-      </Modal> */}
-    </div>
+      <div className="">
+        <Modal/>
+      </div>
     </div>
   </div>
- 
         </div>
-
-        
     )
 }
-
 export default Contact
