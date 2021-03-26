@@ -1,17 +1,22 @@
 import React from 'react';
 import Modal from './Modal'
+import {useState} from 'react';
 
 const Contact = () => {
 
+  
+  // const [show, setShow] = useState(false); 
+  //   const handleClose = () => setShow(false);
+  //   const handleShow = () => setShow(true);
   
     return (
       
     
 
-        <div>
+        <div id='contact-body'>
              <div class="w3-container w3-content w3-padding-64" style={{maxWidth:"800px"}} id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Want to reach us!</i></p>
+    <p class="w3-opacity w3-center"><i>Want to reach us?</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style={{width:'30px'}}></i> Ohio, US<br/>
@@ -31,11 +36,19 @@ const Contact = () => {
           <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"/>
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
+        <br/>
+
+
       </div>
+      <div>
+    {/* <button onClick={handleShow } className="btn btn-dark">Subscribe to Our Newsletter!</button> */}
+      {/* <Modal title="Newsletter" onClose={handleClose} show={show}>
+        <p>Modal Body</p>
+      </Modal> */}
     </div>
-    <button type="button" className="btn btn-dark" data-toggle="modal" data-target="#NLModal">Click Here to Subscribe</button>
+    </div>
   </div>
-  
+ 
         </div>
 
         

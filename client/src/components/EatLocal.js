@@ -4,7 +4,7 @@ import coney from './Images/coneys.jpg';
 import {BACKEND_URL} from '../config'
 
 const Restaurant = props => (
-  <div className="card mb-3 card-style">
+  <div className="card mb-3 card-style" id="card-style">
   <div className="row g-0">
   <div className="col-md-4">
 <img className="shopattractimg" src={props.restaurant.image}  alt=""/>

@@ -12,11 +12,9 @@ nav{
 }
 
 button.navbar-toggler{
-  background-color: #080705;
+  background-color: white;
 }
-.navbar-toggler-icon{
-  background-color: #EF476F;
-}
+
 footer{
   background: #080705;
   position: bottom;

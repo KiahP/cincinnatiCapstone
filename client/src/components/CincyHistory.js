@@ -4,7 +4,7 @@ import tour from './Images/historytour.jpg';
 import {BACKEND_URL} from '../config'
 
 const History = props => (
-  <div className="card mb-3 card-style">
+  <div className="card mb-3 card-style" id="card-style">
   <div className="row g-0">
   <div className="col-md-4">
 <img className="shopattractimg" src={props.history.image}  alt=""/>
