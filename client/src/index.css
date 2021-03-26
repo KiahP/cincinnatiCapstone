@@ -1,6 +1,6 @@
 /* my nav */
 nav{
-  background-color: #085a8a;
+  background-color: #EF476F;
   background-image: url(./components/Images/NavBack.png);
   background-repeat: no-repeat;
   background-position-y: -15px;
@@ -11,6 +11,12 @@ nav{
   
 }
 
+button.navbar-toggler{
+  background-color: #080705;
+}
+.navbar-toggler-icon{
+  background-color: #EF476F;
+}
 footer{
   background: #080705;
   position: bottom;
@@ -60,6 +66,16 @@ box-sizing: border-box ;
 }
 
 
+.price {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
 
 
 .home-bg{
@@ -75,6 +91,9 @@ box-sizing: border-box ;
 
 }
 
+
+
+
 .logos{
   height: 150px;
 }
@@ -85,36 +104,14 @@ box-sizing: border-box ;
 }
 
 /* Below is the CSS for the about pages. Img and card details. */
-/* .card {
-  width: 70%;
-  width: 85%;
-  height: 25%;
-  color: rgb(82, 58, 58);
-  position: static;
-  font-size: 17px; */
-  /* border: black;
-  border-width: medium; */
 
-/* } */
 
 div.about {
   border: thick;
   border-color: tomato;
 }
 
-/* #deck{
-  border: black;
-  border-width: thick;
-} */
 
-/* img{
-  width: 150px;
-  height: 150px;
- border-radius: 50%;
-  border-Width: 3;
-  border-Color: red
-  
-} */
 #intro{
   font-size: 20px;
 }
@@ -194,13 +191,56 @@ width: 100%;
   
 }
 
-
-
-
-
-
 /* About Page Style End */
 
+/* Modal within Contact Page*/
+
+#contact-body{
+  background-image: url(./components/contact.bg.jpg);
+}
+
+.modal {
+  /* position: fixed; */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #daae51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.modal.show{
+  opacity: 1;
+  pointer-events: visible;
+}
+
+.modal-content {
+  width: 400px;
+  background-color: #EF476F;
+  transform: translateY(-200px);
+  transition: all 0.2s ease-in-out;
+}
+.modal.show .modal-content {
+  transform: translateY(0);
+}
+.modal-header, .modal-footer {
+  padding: 10px;
+}
+
+.modal-title{
+  margin: 0;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke
+}
 
 
 
@@ -215,18 +255,17 @@ width: 100%;
 @import url('https://fonts.googleapis.com/css2?family=Krub&display=swap');
 
 
-
+/* Make header section larger */
  #header-section-shop{
-height: 700px;
-width: 100%;
+height: 560px;
+
 } 
 
-
+/* css for the header on the shoplocal page */
 .shoptophead{
   background-image: url(./components/Images/shoppage.jpg);
   height: 100vh;
-  min-height: 300px;
- 
+  /* min-height: 300px; */
   background: no repeat center center scroll rgba(255,255,255,0.5);;
   background-size: cover; 
   border-bottom-left-radius: 50% 25%;
@@ -234,6 +273,11 @@ width: 100%;
   
 }
 
+.blackback{
+  background-color:#080705;
+}
+
+/* css for the header on the attraction page */
 .attracttophead{
   background-image: url(./components/Images/attractpage.jpg);
   height: 100vh;
@@ -245,6 +289,8 @@ width: 100%;
   border-bottom-right-radius: 50% 25%;
 
 }
+
+/* css for the header on the eatlocal page */
 .eattophead{
   background-image: url(./components/Images/Taste.png);
   height: 100vh;
@@ -255,6 +301,8 @@ width: 100%;
   border-bottom-left-radius: 50% 25%;
   border-bottom-right-radius: 50% 25%;
 
+
+  /* css for the header on the history page */
 }
 .historyTopHead{
   background-image: url(./components/Images/Museum.jpg);
@@ -268,6 +316,8 @@ width: 100%;
 
 }
 
+
+/* text for the header on all pages */
 .header-text{
   font-family: 'Poppins', sans-serif; 
   position: absolute;
@@ -275,6 +325,8 @@ width: 100%;
  
 }
 
+
+/* css for the h2 on the header, make it bigger bolder and pink */
 .bigger-font{
   font-size: 100px;
   color: #EF476F;
@@ -283,24 +335,23 @@ width: 100%;
   
 }
 
-/* gradient background div */
-/* .exp{
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-  height: 300px;
-  z-index: -1;
-} */
 
+
+
+/* width size for the cards on the things to do pages */
 .cardsize{
   max-width: 540px;
  
 }
 
+/* makes the cards a different shade and curves the bottom, controls the height */
 .zooani{
-
-background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+background: #F4FAFF;
 border-bottom-right-radius: 50% 55%;
 height: 400px;
 }
+
+
 
 .attractimg{
   height: 350px;
@@ -308,6 +359,8 @@ height: 400px;
   
 }
 
+
+/* styling for the image on the cards on the things to do pages */
 .shopattractimg{
   height:400px;
   width: 550px;
@@ -317,21 +370,27 @@ height: 400px;
 
 }
 
+
+/* controls the font size on the cards on the things to do pages */
 .titlestyle{
   font-size:50px;
 
 }
 
+
+/* control the text family for all of the card texts */
 .card-shopattract-text{
   font-family: 'Nunito', sans-serif;
  
 }
 
+
+/* hoover effect for the cards */
 .card-body:hover{
   margin-top: -18px;
- -moz-box-shadow:    0 0 50px #000000;
- -webkit-box-shadow: 0 0 50px #000000;
- box-shadow:         0 0 50px #000000;    
+ -moz-box-shadow:    0 0 50px #EF476F;
+ -webkit-box-shadow: 0 0 50px #EF476F;
+ box-shadow:         0 0 50px #EF476F;    
 }
 
 /* css for the image on the shop page */
@@ -341,6 +400,7 @@ height: 385px;
 width: 100%;
 }
 
+/* controls the images on the eatlocal page center div  */
 #coneyimg{
   height: 450px;
   width: 100%;
@@ -348,6 +408,7 @@ width: 100%;
 
 }
 
+/* controls the image on the center div on the history page  */
 #cincyhistory{
   height: 450px;
   width: 100%;
@@ -359,27 +420,34 @@ width: 100%;
 /* margin-top: 120px; */
 /* margin-bottom: 70px; */
 border-style: solid;
-border-color: black;
+border-color:#080705;;
 width:650px;
 
 }
 
+
+/* creates a parent div for the things to do page  */
 .parent{
   position: relative;
   height:1000px;
-  margin-bottom: 100px;
-  margin-top: 300px;
+  /* margin-bottom: 100px; */
+  margin-top: 300px; 
+
  
 }
 
+/* background on the parent div for the attractions page */
 .pback{
-   background-image: url("./components/Images/greatamerican.jpg");
+  background-image: url("./components/Images/greatamerican.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
-  height:500px;
+  
 }
+
+
+/* background on the parent div for the shop page */
 
 .paback{
   background-image: url("./components/Images/wheel.jpg");
@@ -388,6 +456,10 @@ width:650px;
   background-repeat: no-repeat;
   background-size:cover;
 }
+
+
+
+/* background on the parent div for the history page */
 .peback{
   background-image: url("./components/Images/musicHall.jpg");
   background-attachment: fixed;
@@ -395,6 +467,9 @@ width:650px;
   background-repeat: no-repeat;
   background-size:cover;
 }
+
+
+/* background on the parent div for the eatlocal page */
 .phback{
   background-image: url("./components/Images/bridgecity.jpg");
   background-attachment: fixed;
@@ -404,6 +479,7 @@ width:650px;
 }
 
 
+/* creates and style the child div  */
 .child{
   position: absolute;
   top: 50%;
@@ -413,6 +489,8 @@ width:650px;
   background-color: white;
 
 }
+
+
 /* the h2 text below header */
 .shoptextstyle{
   font-family: 'Nunito', sans-serif;
@@ -423,10 +501,11 @@ width:650px;
 
 /* to create a margin around my content */
 .bodyody{
-  margin-bottom: 200px;
+  margin-bottom: 90px;
+ 
 }
 
-
+/* paragraph text in the child div  */
 .aqua{
   font-size: 20px;
   text-align:justify ;
@@ -435,17 +514,295 @@ width:650px;
   margin-left: 10px;
 }
 
+
+/* paragraph text in the header  */
 .bat{
   font-size: 20px;
   font-weight: 40px;
 }
 
+
+
+/* changes the card text  */
 .wonder{
-  font-size: 20px;
+  font-size:20px;
 }
+
+
+/* background color behind the card */
+#card-style{
+  background-color:#080705;
+}
+
+
 /* shop and attraction css end */
 
+/* below this are media queries */
 
 
 
-/* media queries to make the responsive on mobile, tablets, laptop, desktop */
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+/* MEDIA QUERIES to make the responsive on mobile, tablets, laptop, desktop */
+
+
+/* small screens >576 phones */
+
+@media screen and (max-width:576px){
+
+
+
+  /* media queries for the header */
+
+  /* Make header section larger */
+ #header-section-shop{
+  height: 250px;
+  
+  } 
+  
+  /* css for the header on the shoplocal page */
+  .shoptophead{
+    background-image: url(./components/Images/shoppage.jpg);
+    height: 40vh;
+    /* min-height: 300px; */
+    background: no repeat center center scroll rgba(255,255,255,0.5);;
+    background-size: cover; 
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    
+  }
+  
+  .blackback{
+    background-color:#080705;
+  }
+  
+  /* css for the header on the attraction page */
+  .attracttophead{
+    background-image: url(./components/Images/attractpage.jpg);
+    height: 40vh;
+    top: 100px;
+    min-height: 300px;
+    background: no repeat center center scroll rgba(255,255,255,0.5);;
+    background-size: cover; 
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius:0%;
+  
+  }
+  
+  /* css for the header on the eatlocal page */
+  .eattophead{
+    background-image: url(./components/Images/Taste.png);
+    height: 40vh;
+    top: 100px;
+    min-height: 300px;
+    background: no repeat center center scroll rgba(255,255,255,0.5);;
+    background-size: cover; 
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  
+  
+    /* css for the header on the history page */
+  }
+  .historyTopHead{
+    background-image: url(./components/Images/Museum.jpg);
+    height: 40vh;
+    top: 100px;
+    min-height: 300px;
+    background: no repeat center center scroll rgba(255,255,255,0.5);;
+    background-size: cover; 
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  
+  }
+  
+  
+  /* text for the header on all pages */
+  .header-text{
+    font-family: 'Poppins', sans-serif; 
+    position: absolute;
+    left: 16px;
+   
+  }
+
+
+  .bat{
+    font-size: 20px;
+    font-weight: 40px;
+  }
+
+  .bigger-font{
+    font-size: 30px;
+    color: #EF476F;
+    font-weight: 30px;
+    
+    
+  }
+
+ 
+
+  /* media queries for the center div style */
+   
+  /* creates a parent div for the things to do page  */
+
+  .parent{
+    position: relative;
+    height:1000px;
+    /* margin-bottom: 100px; */
+    margin-top: 2px; 
+  
+
+  }
+
+
+ .child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+
+}
+
+/* css for the div between header and cards */
+.shop-info{
+  /* margin-top: 120px; */
+  /* margin-bottom: 70px; */
+  border-style: solid;
+  border-color:#080705;;
+  width:350px;
+  height:max-content;
+  
+  }
+
+
+ /* the h2 text below header */
+.shoptextstyle{
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight:80px;
+}
+
+ /* css for the image on the shop page */
+#shop2{
+  margin-bottom: 20px;
+  height: 175px;
+  width: 100%;
+  }
+
+ /* paragraph text in the child div  */
+.aqua{
+  font-size: 13px;
+  text-align:justify ;
+  font-family: 'Krub', sans-serif;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+  /* media queries for the cards on a small screen */
+
+
+
+  /* styling for the image on the cards on the things to do pages */
+  .shopattractimg{
+    height: 220px ;
+    width: 350px ;
+  }
+  
+
+  /* makes the cards a different shade and curves the bottom, controls the height */
+.zooani{
+ 
+  border-bottom-right-radius: 0% ;
+  height: 200px;
+  }
+
+ /* controls the font size on the cards on the things to do pages */
+.titlestyle{
+  font-size:12px;
+
+}
+
+  /* changes the card text  */
+.wonder{
+  font-size:10px;
+}
+
+/* changes the address size font on small screens */
+.mobile-text{
+  font-size:8px;
+}
+
+/* background color behind the card */
+#card-style{
+  background-color:#F4FAFF;
+}
+
+
+}
+ 
+
+
+/* media queries for screens such as tablets - medium devices */
+
+
+@media screen and (max-width:768px){
+
+
+  .bigger-font{
+    font-size: 70px;
+    color: #EF476F;
+    font-weight: 50px;
+    
+    
+  }
+
+  .shoptophead{
+    background-image: url(./components/Images/shoppage.jpg);
+    height: 75vh;
+    /* min-height: 300px; */
+    background: no repeat center center scroll rgba(255,255,255,0.5);;
+    background-size: cover; 
+    border-bottom-left-radius: 50% 25%;
+    border-bottom-right-radius: 50% 25%;
+    
+  }
+ 
+ 
+
+  .tablet-text{
+    font-size: 10px;
+    word-wrap: normal;
+  }
+
+  .titlestyle{
+    font-size: 18px;
+  }
+
+  #card-style{
+    background-color:#F4FAFF;
+  }
+
+  /* styling for the image on the cards on the things to do pages */
+  .shopattractimg{
+    height: 220px ;
+    width: 350px ;
+  }
+ 
+ 
+  
+}
