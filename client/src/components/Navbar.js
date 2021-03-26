@@ -27,7 +27,7 @@ export default class Navbar extends Component {
 <li>
 <Link to='/contact' className="nav-link">Contact</Link>
 </li>
-{/* <li>
+<li>
 <Link to='/restaurant' className="nav-link">Eat Local</Link>
 </li>     
 <li>    
@@ -38,14 +38,9 @@ export default class Navbar extends Component {
 </li>
 <li>        
 <Link to='/history' className="nav-link">Cincy History</Link>
-</li>         */}
+</li>        
         
-<DropdownButton  variant='none' id="dropdown-button" title="Things To Do">
-  <Dropdown.Item href="/restaurant">Eat Local</Dropdown.Item>
-  <Dropdown.Item href="/shop">Shop Local</Dropdown.Item>
-  <Dropdown.Item href="/attraction">Attractions</Dropdown.Item>
-  <Dropdown.Item href="/history">Cincy History</Dropdown.Item>
-</DropdownButton>      
+     
 
 </ul>
 </div>
